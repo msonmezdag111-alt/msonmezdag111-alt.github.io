@@ -1,0 +1,128 @@
+.dropdown ul{
+display: flex;
+justify-content: center;
+padding-right: 100px;
+list-style: none;
+gap: 40px;
+color: lightblue;
+}
+
+.dropdown a{
+display: inline-block;
+text-decoration: none;
+color: lightblue;
+transition: color 0.3s ease;
+}
+
+.dropdown a:hover{
+    color: #4adb07
+}
+
+body{
+    background-image: url('black-trianglify.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Press Start 2P"
+}
+
+p{
+    text-align: center;
+}
+
+.whoamitxt{
+    color: white;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 25px;
+    line-height: 1.8;
+}
+
+.afbeeldingen-whoami{
+    display: flex;
+    justify-content: center;
+}
+
+.afbeeldingen-blog{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+}
+
+.afbeelding-html1{
+    width: 500px;
+    margin: auto;
+}
+
+.afbeelding-html2{
+    width: 500px;
+    margin: auto;
+}
+
+.afbeelding-html{
+    display: block;
+    width: 250px;
+    margin: 20px auto 0;
+    height: 250px;
+}
+
+.blogtekst{
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 25px;
+    color:white;
+}
+
+.h1{
+    text-align: center;
+    color:white
+}
+
+li {
+    list-style: none;
+    text-align: center;
+}
+
+.hotelsimclick{
+    width: 300px;
+    display: block;
+    margin: 20px auto 0;
+    display: inline-block;
+    padding: 0;
+    transition: transform 0.2s ease;
+}
+
+.fototext a:hover .hotelsimclick,
+.fototext a:focus .hotelsimclick {
+    transform: scale(1.05);
+}
+
+.fototext a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.hover_tekst{
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.fototext a:hover .hover_tekst,
+.fototext a:focus .hover_tekst {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.fototext a,
+.fototext a:visited,
+.fototext a:hover {
+    text-decoration: none;
+}
