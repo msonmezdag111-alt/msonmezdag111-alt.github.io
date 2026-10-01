@@ -129,10 +129,48 @@ header section {
   color: lightblue;
 }
 
+.headertitle {
+  margin-top: auto;
+  padding-top: 0px;
+  padding-left: 26px;
+  color: lightblue;
+}
+
+.blogitem p {
+  gap: 1px;
+}
+
 .par {
   padding-left: 30px;
   padding-top: 50px;
   color: lightblue;
+}
+
+details {
+  margin-bottom: 25px;
+}
+
+.blogitem {
+  background: purple;
+  width: 50%;
+  border-radius: 16px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0 0, 0, 50);
+  padding-bottom: 20px;
+}
+
+.blogitem summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.blogitem[open] summary {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 768px) {
