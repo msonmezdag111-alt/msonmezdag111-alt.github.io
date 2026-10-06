@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="projects.css" />
+    <script src="projects.js" defer></script>
     <title>homepage</title>
   </head>
   <body>
@@ -21,6 +22,7 @@
               <li><a href="whoami.html">ABOUT ME</a></li>
               <li><a href="projects.html" class="active">MY PROJECTS</a></li>
               <li><a href="blog.html">BLOGS</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
             </ul>
           </div>
         </nav>
@@ -28,25 +30,20 @@
     </header>
     <main>
       <section>
-        <div class="content">
-          <div class="cardcontainer">
-            <div class="card">
-              <img src="hotelsim.png" alt="hotelsimulatie" />
-              <div class="cardcontent">
-                <h3>hotelsimulatie</h3>
-                <p>
-                  The entire simulation was built in java. We used design
-                  patterns really well and we were quite happy with the end
-                  result.
-                </p>
-                <a
-                  href="https://github.com/DimiS0/Hotel-simulatie---groep-7-"
-                  class="button"
-                  >Read More</a
-                >
-              </div>
+        <div class="filterwrapper">
+          <div class="filtertextcontainer">
+            <h1 class="filtertext">My Projects</h1>
+          </div>
+          <div class="filtercontainer">
+            <div class="filter" id="filter">
+              <button class="dropdownbutton">Alle projecten ▾</button>
+
+              <div class="dropdownmenu"></div>
             </div>
           </div>
+        </div>
+        <div class="content">
+          <div class="cardcontainer" id="projecten"></div>
         </div>
       </section>
     </main>

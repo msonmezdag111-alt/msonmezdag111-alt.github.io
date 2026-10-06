@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+    <script src="lichess.js" defer></script>
     <title>homepage</title>
   </head>
   <body>
@@ -20,6 +21,7 @@
             <li><a href="whoami.html">ABOUT ME</a></li>
             <li><a href="projects.html">MY PROJECTS</a></li>
             <li><a href="blog.html">BLOGS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </nav>
       </section>
@@ -42,7 +44,12 @@
               <div class="cardcontent">
                 <h2>HTML</h2>
                 <p>HTMl is the bare minimum for building a webpage</p>
-                <a href="#" class="button">Read More</a>
+                <a
+                  href="https://nl.wikipedia.org/wiki/HyperText_Markup_Language"
+                  class="button"
+                  target="_blank"
+                  >Read More</a
+                >
               </div>
             </div>
             <div class="card">
@@ -53,7 +60,12 @@
                   CSS is used to make an ordinary website stand out more and be
                   more accessible
                 </p>
-                <a href="#" class="button">Read More</a>
+                <a
+                  href="https://nl.wikipedia.org/wiki/Cascading_Style_Sheets"
+                  class="button"
+                  target="_blank"
+                  >Read More</a
+                >
               </div>
             </div>
             <div class="card">
@@ -64,7 +76,12 @@
                   Java is used for backend development, like building
                   applications
                 </p>
-                <a href="#" class="button">Read More</a>
+                <a
+                  href="https://nl.wikipedia.org/wiki/Java_(programmeertaal)"
+                  class="button"
+                  target="_blank"
+                  >Read More</a
+                >
               </div>
             </div>
             <div class="card">
@@ -75,19 +92,29 @@
                   Python is used for backend development, like building
                   applications
                 </p>
-                <a href="#" class="button">Read More</a>
+                <a
+                  href="https://nl.wikipedia.org/wiki/Python_(programmeertaal)"
+                  class="button"
+                  target="_blank"
+                  >Read More</a
+                >
               </div>
             </div>
           </div>
         </div>
+        <section id="lichess" class="lichess">
+          <h2>Lichess profiel</h2>
+
+          <p id="lichessData">Gegevens laden...</p>
+
+          <p id="blitzRating"></p>
+          <p id="rapidRating"></p>
+        </section>
       </section>
     </main>
     <footer>
       <section>
         <ul>
-          <li>
-            <a href="#">contact</a>
-          </li>
           <li>
             <a href="#">terms of service</a>
           </li>

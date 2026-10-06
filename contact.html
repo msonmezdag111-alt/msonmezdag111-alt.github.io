@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="contact.css" />
+    <script src="contact.js" defer></script>
     <title>homepage</title>
   </head>
   <body>
@@ -18,21 +19,40 @@
           <div class="menu">
             <ul>
               <li><a href="index.html">HOME</a></li>
-              <li><a href="whoami.html" class="active">ABOUT ME</a></li>
+              <li><a href="whoami.html">ABOUT ME</a></li>
               <li><a href="projects.html">MY PROJECTS</a></li>
               <li><a href="blog.html">BLOGS</a></li>
-              <li><a href="contact.html">CONTACT</a></li>
+              <li><a href="contact.html" class="active">CONTACT</a></li>
             </ul>
           </div>
         </nav>
       </section>
     </header>
+
     <main>
       <section>
-        <h2></h2>
-        <p></p>
+        <h1>Contact</h1>
+
+        <form id="contactForm">
+          <label for="naam">Naam</label>
+          <input type="text" id="naam" />
+          <p id="naamFout" class="fout"></p>
+
+          <label for="email">E-mail</label>
+          <input type="text" id="email" />
+          <p id="emailFout" class="fout"></p>
+
+          <label for="bericht">Bericht</label>
+          <textarea id="bericht"></textarea>
+          <p id="berichtFout" class="fout"></p>
+
+          <button type="submit">Versturen</button>
+
+          <p id="succes"></p>
+        </form>
       </section>
     </main>
+
     <footer>
       <section>
         <ul>
