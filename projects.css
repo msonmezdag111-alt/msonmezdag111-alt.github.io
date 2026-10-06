@@ -163,13 +163,13 @@ header section {
 .title {
   padding-left: 26px;
   padding-top: 30px;
-  color: lightblue;
+  color: #d6d6d6;
 }
 
 .par {
   padding-left: 30px;
   padding-top: 50px;
-  color: lightblue;
+  color: #d6d6d6;
 }
 
 .filterwrapper {
@@ -183,7 +183,7 @@ header section {
 
 .filtertext {
   font-family: Arial, sans-serif;
-  color: hsl(0, 0%, 90%);
+  color: #d6d6d6;
 }
 
 .filtercontainer {
@@ -201,7 +201,7 @@ header section {
   width: 140px;
   height: 35px;
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: #d6d6d6;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -226,7 +226,7 @@ header section {
   width: 100%;
   padding: 10px;
   background-color: black;
-  color: white;
+  color: #d6d6d6;
   border: none;
   cursor: pointer;
 }

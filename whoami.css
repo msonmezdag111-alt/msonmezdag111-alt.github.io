@@ -127,13 +127,13 @@ header section {
 .title {
   padding-left: 26px;
   padding-top: 30px;
-  color: lightblue;
+  color: #d6d6d6;
 }
 
 #par {
   padding-left: 30px;
   padding-top: 50px;
-  color: lightblue;
+  color: #d6d6d6;
 }
 
 @media (max-width: 768px) {
