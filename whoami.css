@@ -121,6 +121,7 @@ header section {
   display: flex;
   flex-grow: 5;
   flex-direction: column;
+  width: 40%;
 }
 
 .title {
@@ -129,7 +130,7 @@ header section {
   color: lightblue;
 }
 
-.par {
+#par {
   padding-left: 30px;
   padding-top: 50px;
   color: lightblue;

@@ -139,6 +139,7 @@ header section {
 
 .blogitem p {
   gap: 1px;
+  margin: auto;
 }
 
 .par {
@@ -153,11 +154,9 @@ details {
 
 .blogitem {
   background: purple;
-  width: 50%;
+  width: 100%;
   border-radius: 16px;
   padding: 0;
-  overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0 0, 0, 50);
   padding-bottom: 20px;
 }
 
@@ -172,6 +171,11 @@ details {
 
 .blogitem[open] summary {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.artiekelen {
+  width: 50%;
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
