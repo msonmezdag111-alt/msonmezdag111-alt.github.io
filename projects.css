@@ -235,6 +235,10 @@ header section {
   background-color: purple;
 }
 
+.stoplink {
+  pointer-events: none;
+}
+
 @media (max-width: 768px) {
   header section {
     gap: 20px;
