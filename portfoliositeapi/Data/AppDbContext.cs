@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using portfoliositeapi;
+using portfoliositeapi.Models;
 
 namespace Portfoliositeapi.Data;
 
@@ -11,4 +11,5 @@ public class AppDbContext : DbContext
     }
 
     public DbSet<Project> Projects { get; set; }
+    public DbSet<Blogpost> Blogposts { get; set; }
 }

@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using portfoliositeapi.DTOs;
 using Portfoliositeapi.Data;
 using portfoliositeapi.Services;
+using portfoliositeapi.Endpoints;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // Services registreren
 builder.Services.AddScoped<ProjectService>();
+builder.Services.AddScoped<BlogpostService>();
 
 var app = builder.Build();
 
@@ -25,50 +27,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/", () => "ByteForge API werkt!");
+// PROJECT ENDPOINTS
 
-// PROJECTS
-
-app.MapGet("/projects", async (ProjectService service) =>
-{
-    return Results.Ok(await service.GetAll());
-});
-
-app.MapGet("/projects/{id}", async (int id, ProjectService service) =>
-{
-    var project = await service.GetById(id);
-
-    if (project == null)
-        return Results.NotFound();
-
-    return Results.Ok(project);
-});
-
-app.MapPost("/projects", async (CreateProjectDto dto, ProjectService service) =>
-{
-    var project = await service.Create(dto);
-
-    return Results.Created($"/projects/{project.Id}", project);
-});
-
-app.MapPut("/projects/{id}", async (int id, UpdateProjectDto dto, ProjectService service) =>
-{
-    var project = await service.Update(id, dto);
-
-    if (project == null)
-        return Results.NotFound();
-
-    return Results.Ok(project);
-});
-
-app.MapDelete("/projects/{id}", async (int id, ProjectService service) =>
-{
-    var deleted = await service.Delete(id);
-
-    if (!deleted)
-        return Results.NotFound();
-
-    return Results.NoContent();
-});
-
+new Endpoints(app);
 app.Run();

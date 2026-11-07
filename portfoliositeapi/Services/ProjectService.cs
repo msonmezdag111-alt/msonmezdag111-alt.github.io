@@ -2,6 +2,7 @@
 using portfoliositeapi;
 using portfoliositeapi.DTOs;
 using Portfoliositeapi.Data;
+using portfoliositeapi.Models;
 
 namespace portfoliositeapi.Services;
 

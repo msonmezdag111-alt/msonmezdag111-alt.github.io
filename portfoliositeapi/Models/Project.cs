@@ -1,4 +1,4 @@
-namespace portfoliositeapi;
+namespace portfoliositeapi.Models;
 
 public class Project
 {
